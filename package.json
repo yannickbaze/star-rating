@@ -18,7 +18,8 @@
   "author": "Yannick Baze",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.0.0"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "repository": {
     "type": "git",
