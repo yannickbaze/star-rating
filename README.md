@@ -20,13 +20,13 @@ Perfect for product reviews, feedback systems, and user ratings.
 ## 📦 Installation
 
 ```bash
-npm install star-rating-react-component
+npm install @yannickbaze/star-rating
 ```
 
 or
 
 ```bash
-yarn add star-rating-react-component
+yarn add npm install @yannickbaze/star-rating
 ```
 
 ---
@@ -34,7 +34,7 @@ yarn add star-rating-react-component
 ## 🚀 Usage
 
 ```jsx
-import StarRating from "star-rating-react-component";
+import StarRating from "@yannickbaze/star-rating";
 
 function App() {
   return (
