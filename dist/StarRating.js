@@ -1,12 +1,14 @@
 "use strict";
 
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = StarRating;
-var _react = require("react");
+var _react = _interopRequireWildcard(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, "default": e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -62,15 +64,15 @@ function StarRating(_ref) {
     color: color,
     fontSize: "".concat(size / 1.5, "px")
   };
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     style: container,
     className: className
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     style: starContainerStyle
   }, Array.from({
     length: maxRating
   }, function (_, i) {
-    return /*#__PURE__*/React.createElement(Star, {
+    return /*#__PURE__*/_react["default"].createElement(Star, {
       key: i,
       onRate: function onRate() {
         return handleRating(i + 1);
@@ -85,7 +87,7 @@ function StarRating(_ref) {
       color: color,
       size: size
     });
-  })), /*#__PURE__*/React.createElement("p", {
+  })), /*#__PURE__*/_react["default"].createElement("p", {
     style: textStyle
   }, messages.length === maxRating ? messages[tempRating ? tempRating - 1 : rating - 1] : tempRating || rating || ""));
 }
@@ -102,24 +104,24 @@ function Star(_ref2) {
     display: "block",
     cursor: "pointer"
   };
-  return /*#__PURE__*/React.createElement("span", {
+  return /*#__PURE__*/_react["default"].createElement("span", {
     style: starStyle,
     onClick: onRate,
     onMouseEnter: onHoverIn,
     onMouseLeave: onHoverOut
-  }, full ? /*#__PURE__*/React.createElement("svg", {
+  }, full ? /*#__PURE__*/_react["default"].createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
     fill: color,
     stroke: color
-  }, /*#__PURE__*/React.createElement("path", {
+  }, /*#__PURE__*/_react["default"].createElement("path", {
     d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-  })) : /*#__PURE__*/React.createElement("svg", {
+  })) : /*#__PURE__*/_react["default"].createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
     viewBox: "0 0 24 24",
     stroke: color
-  }, /*#__PURE__*/React.createElement("path", {
+  }, /*#__PURE__*/_react["default"].createElement("path", {
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 2,
