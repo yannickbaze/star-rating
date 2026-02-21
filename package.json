@@ -1,12 +1,12 @@
 {
   "name": "@yannickbaze/star-rating",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable star rating component for React",
-  "main": "index.js",
+  "main": "dist/StarRating.js",
   "files": [
-    "src",
-    "index.js",
-    "README.md"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "react",
@@ -28,5 +28,14 @@
   "bugs": {
     "url": "https://github.com/yannickbaze/star-rating/issues"
   },
-  "homepage": "https://github.com/yannickbaze/star-rating#readme"
+  "homepage": "https://github.com/yannickbaze/star-rating#readme",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-react": "^7.28.5"
+  }
 }
